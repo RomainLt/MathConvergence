@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body onLoad="calcul()">
+    <h1>Convergence de suites numériques</h1>
+    <canvas id="canvas"></canvas>
+    <br><br>
+    <!--Legende de tracés -->
+    <span id="trace1">- Suite de Fibonacci</span>
+    <span id="trace2">- Accélération d'Aitken</span>
+    <span id="trace3">- Accélération de Richardson</span>
+
+    <br><br>
+    <span id="span_N">Calcul jusqu'à N+</span>
+    <input id="input_N" value="0" />
+    <input id="input_plus" onclick="augmente_N()" type="button" value="+">
+    <input id="input_moins" onclick="diminue_N()" type="button" value="-">
+    <input id="input_ok" onclick="refresh()" type="button" value="OK">
+
+    <script src="javascript.js" type="text/javascript"></script>
+</body>
+<html>
